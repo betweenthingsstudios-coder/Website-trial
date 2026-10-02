@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>October at Between Things</title>
+<meta name="description" content="October workshops and events at Between Things — yoga, origami, clay, pottery, ghazals and sound healing.">
+<meta name="theme-color" content="#ECE1C9">
+<link rel="preload" href="assets/fonts/dosis.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: "Dosis";
+    src: url("assets/fonts/dosis.woff2") format("woff2");
+    font-weight: 200 800;
+    font-display: swap;
+  }
+
+  :root {
+    --bg: #ECE1C9;
+    --terracotta: #AD5640;
+    --border: #7E8966;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* The design is a 1080 x 3840 canvas (two stacked 1080 x 1920 Canva pages).
+     Every measurement below is in design pixels, scaled with --u so the page
+     stays pixel-faithful at any phone width. */
+  .wrap {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    container-type: inline-size;
+  }
+
+  .page {
+    --u: calc(100cqw / 1080);
+    position: relative;
+    width: 100%;
+    height: calc(3840 * var(--u));
+    overflow: hidden;
+  }
+
+  .page img {
+    position: absolute;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  /* ---------- Header ---------- */
+  .arch     { left: calc(209 * var(--u)); top: calc(61 * var(--u)); width: calc(649 * var(--u)); }
+  .at       { left: calc(734 * var(--u)); top: calc(962 * var(--u)); width: calc(89 * var(--u)); }
+
+  h1 {
+    font: inherit;
+  }
+
+  .title {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    font-size: calc(94.6 * var(--u));
+    transform: scaleX(0.92);
+    line-height: 1;
+    color: var(--terracotta);
+    white-space: nowrap;
+  }
+  .title-1 { top: calc(965.4 * var(--u)); letter-spacing: calc(3.7 * var(--u)); text-indent: calc(1.7 * var(--u)); }
+  .title-2 { top: calc(1061.4 * var(--u)); letter-spacing: calc(-1.45 * var(--u)); text-indent: calc(-3.2 * var(--u)); }
+
+  /* ---------- Sparkles ---------- */
+  .sparkles { width: calc(113 * var(--u) * var(--s, 0.865)); z-index: 0; }
+
+  /* ---------- Event boxes ---------- */
+  .event {
+    position: absolute;
+    z-index: 1;
+    left: calc(165.5 * var(--u));
+    width: calc(749 * var(--u));
+    top: calc(var(--y) * var(--u));
+    height: calc(var(--h) * var(--u));
+    padding-top: calc(var(--pt) * var(--u));
+    background: var(--terracotta);
+    border: calc(1.5 * var(--u)) solid var(--border);
+    color: var(--bg);
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: calc(37.84 * var(--u));
+    line-height: calc(54 * var(--u));
+    letter-spacing: calc(1.2 * var(--u));
+    text-indent: calc(1.2 * var(--u));
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: filter .15s ease;
+  }
+  .event:hover { filter: brightness(1.06); }
+  .event:active { filter: brightness(0.94); }
+  .event:focus-visible { outline: calc(4 * var(--u)) solid var(--border); outline-offset: calc(4 * var(--u)); }
+
+  /* ---------- Footer ---------- */
+  .social { position: absolute; display: block; z-index: 1; }
+  .social img { position: static; width: 100%; }
+  .social:focus-visible { outline: calc(3 * var(--u)) solid var(--border); outline-offset: calc(6 * var(--u)); border-radius: 4px; }
+  .ig   { left: calc(320 * var(--u)); top: calc(3483 * var(--u)); width: calc(84 * var(--u)); }
+  .mail { left: calc(489 * var(--u)); top: calc(3488 * var(--u)); width: calc(101 * var(--u)); }
+  .wa   { left: calc(677 * var(--u)); top: calc(3483 * var(--u)); width: calc(84 * var(--u)); }
+  .logo { left: calc(220 * var(--u)); top: calc(3626 * var(--u)); width: calc(611 * var(--u)); }
+
+  /* Fallback for browsers without container query units */
+  @supports not (width: 1cqw) {
+    .page { --u: calc(min(100vw, 540px) / 1080); }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="page">
+
+    <!-- Sparkles (decorative) -->
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="--s:1;     left:calc(78 * var(--u));   top:calc(23 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(70.3 * var(--u));  top:calc(1206.3 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(912.3 * var(--u)); top:calc(1667.3 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(71.3 * var(--u));  top:calc(2197.3 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(912.3 * var(--u)); top:calc(2782.3 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(0.3 * var(--u));   top:calc(3343.3 * var(--u))">
+
+    <!-- Header -->
+    <img class="arch" src="assets/arch.png" alt="" aria-hidden="true">
+    <h1 aria-label="October at Between Things">
+      <span class="title title-1" aria-hidden="true">OCTOBER</span>
+      <img class="at" src="assets/at.png" alt="" aria-hidden="true">
+      <span class="title title-2" aria-hidden="true">BETWEEN THINGS</span>
+    </h1>
+
+    <!-- Events: --y = box top, --h = box height, --pt = text offset (design px) -->
+    <nav aria-label="October events">
+      <a class="event" style="--y:1274.5; --h:154; --pt:19" href="https://forms.gle/u19vWeckXfHTPRzL9" target="_blank" rel="noopener">WEEKEND RESET<br>10 OCT</a>
+      <a class="event" style="--y:1510.5; --h:154; --pt:19" href="https://forms.gle/6SWwCJhtShNoXEXE7" target="_blank" rel="noopener">INTRODUCTION TO MODULAR ORIGAMI<br>11 OCT</a>
+      <a class="event" style="--y:1734.5; --h:154; --pt:19" href="https://forms.gle/yTKS6p1q3vdsY2xn9" target="_blank" rel="noopener">MINIATURES WITH COLD PORCELAIN CLAY<br>11 OCT</a>
+      <a class="event" style="--y:1964.5; --h:153; --pt:18" href="https://forms.gle/Lt8je4ejDBBcmbXY9" target="_blank" rel="noopener">THREE DAY YOGA RESET<br>16-18 OCT</a>
+      <a class="event" style="--y:2199.5; --h:154; --pt:19" href="https://forms.gle/uFHiuUgq7ydq8x3P9" target="_blank" rel="noopener">ORIGAMI LAMP MAKING<br>17 OCT</a>
+      <a class="event" style="--y:2435.5; --h:190; --pt:9" href="https://forms.gle/tx1uTfKBrxnfp6gR8" target="_blank" rel="noopener">SHAAM-E-GHAZAL X BOLLYWOOD WITH<br>SAKHI LIVE<br>17 OCT</a>
+      <a class="event" style="--y:2707.5; --h:153; --pt:18" href="https://forms.gle/6TJvoAQsqwCftL5f6" target="_blank" rel="noopener">SGRAFFITO POTTERY<br>24 OCT</a>
+      <a class="event" style="--y:2942.5; --h:244; --pt:10" href="https://forms.gle/XbjPa12qgNfPv68q7" target="_blank" rel="noopener">AROUND THE TABLE<br>WITH<br>CLAY, COFFEE &amp; CONVERSATION<br>25 OCT</a>
+      <a class="event" style="--y:3268.5; --h:154; --pt:18" href="https://forms.gle/Am2jkvrL5e8firyeA" target="_blank" rel="noopener">FULL MOON SOUND HEALING<br>25 OCT</a>
+    </nav>
+
+    <!-- Footer -->
+    <a class="social ig"   href="https://instagram.com/betweenthings.studio" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/instagram.png" alt=""></a>
+    <a class="social mail" href="mailto:betweenthingsstudios@gmail.com" aria-label="Email"><img src="assets/mail.png" alt=""></a>
+    <a class="social wa"   href="https://wa.me/919136535737" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/whatsapp.png" alt=""></a>
+    <img class="logo" src="assets/logo.png" alt="between things">
+
+  </div>
+</main>
+</body>
+</html>
