@@ -63,7 +63,7 @@
     --u: calc(100cqw / 1080);
     position: relative;
     width: 100%;
-    height: calc(3440 * var(--u));
+    height: calc(3386 * var(--u));
     overflow: hidden;
   }
 
@@ -129,16 +129,34 @@
   .event:active { filter: brightness(0.94); }
   .event.sold-out { cursor: default; }
   .event.sold-out:hover, .event.sold-out:active { filter: none; }
+  .event.sold-out .sold-text { opacity: 0.55; }
+  .stamp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    padding: calc(4 * var(--u)) calc(30 * var(--u)) calc(2 * var(--u));
+    background: var(--bg);
+    color: var(--terracotta);
+    border: calc(4 * var(--u)) solid var(--terracotta);
+    outline: calc(3 * var(--u)) solid var(--bg);
+    font-weight: 800;
+    font-size: calc(56 * var(--u));
+    line-height: 1.15;
+    letter-spacing: calc(6 * var(--u));
+    text-indent: calc(6 * var(--u));
+    box-shadow: 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(80, 40, 25, 0.25);
+  }
   .event:focus-visible { outline: calc(4 * var(--u)) solid var(--border); outline-offset: calc(4 * var(--u)); }
 
   /* ---------- Footer ---------- */
   .social { position: absolute; display: block; z-index: 1; }
   .social img { position: static; width: 100%; }
   .social:focus-visible { outline: calc(3 * var(--u)) solid var(--border); outline-offset: calc(6 * var(--u)); border-radius: 4px; }
-  .ig   { left: calc(320 * var(--u)); top: calc(3083 * var(--u)); width: calc(84 * var(--u)); }
-  .mail { left: calc(489 * var(--u)); top: calc(3088 * var(--u)); width: calc(101 * var(--u)); }
-  .wa   { left: calc(677 * var(--u)); top: calc(3083 * var(--u)); width: calc(84 * var(--u)); }
-  .logo { left: calc(220 * var(--u)); top: calc(3226 * var(--u)); width: calc(611 * var(--u)); }
+  .ig   { left: calc(320 * var(--u)); top: calc(3029 * var(--u)); width: calc(84 * var(--u)); }
+  .mail { left: calc(489 * var(--u)); top: calc(3034 * var(--u)); width: calc(101 * var(--u)); }
+  .wa   { left: calc(677 * var(--u)); top: calc(3029 * var(--u)); width: calc(84 * var(--u)); }
+  .logo { left: calc(220 * var(--u)); top: calc(3172 * var(--u)); width: calc(611 * var(--u)); }
 
   /* Fallback for browsers without container query units */
   @supports not (width: 1cqw) {
@@ -155,9 +173,9 @@
     <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(70.3 * var(--u));  top:calc(1206.3 * var(--u))">
     <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(912.3 * var(--u)); top:calc(1667.3 * var(--u))">
     <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(71.3 * var(--u));  top:calc(1743.3 * var(--u))">
-    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(912.3 * var(--u)); top:calc(2382.3 * var(--u))">
-    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(0.3 * var(--u));   top:calc(2943.3 * var(--u))">
-    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="--s:1;     left:calc(903 * var(--u));  top:calc(3270 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(912.3 * var(--u)); top:calc(2328.3 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="left:calc(0.3 * var(--u));   top:calc(2889.3 * var(--u))">
+    <img class="sparkles" src="assets/sparkles.png" alt="" aria-hidden="true" style="--s:1;     left:calc(903 * var(--u));  top:calc(3216 * var(--u))">
 
     <!-- Header -->
     <img class="arch" src="assets/arch.png" alt="" aria-hidden="true">
@@ -172,10 +190,10 @@
       <a class="event" style="--y:1274.5; --h:154; --pt:19" href="https://docs.google.com/forms/d/e/1FAIpQLSdfi6XhqypXTDkmTNmXCqjJpKKFX1xP2o1tJn-kjqGvNuEfcg/viewform" target="_blank" rel="noopener">OPEN HOUSE AT BETWEEN THINGS<br>15 OCT, THU · 3-7 PM</a>
       <a class="event" style="--y:1510.5; --h:153; --pt:18" href="https://forms.gle/Lt8je4ejDBBcmbXY9" target="_blank" rel="noopener">THREE DAY YOGA RESET<br>16-18 OCT, FRI-SUN</a>
       <a class="event" style="--y:1745.5; --h:154; --pt:19" href="https://forms.gle/uFHiuUgq7ydq8x3P9" target="_blank" rel="noopener">ORIGAMI LAMP MAKING<br>17 OCT, SAT</a>
-      <div class="event sold-out" style="--y:1981.5; --h:244; --pt:10">SHAAM-E-GHAZAL X BOLLYWOOD WITH<br>SAKHI LIVE<br>17 OCT, SAT<br>SOLD OUT</div>
-      <a class="event" style="--y:2307.5; --h:153; --pt:18" href="https://forms.gle/6TJvoAQsqwCftL5f6" target="_blank" rel="noopener">PAINT A POT<br>24 OCT, SAT</a>
-      <a class="event" style="--y:2542.5; --h:244; --pt:10" href="https://forms.gle/XbjPa12qgNfPv68q7" target="_blank" rel="noopener">AROUND THE TABLE<br>WITH<br>CLAY, COFFEE &amp; CONVERSATION<br>25 OCT, SUN</a>
-      <a class="event" style="--y:2868.5; --h:154; --pt:18" href="https://forms.gle/Am2jkvrL5e8firyeA" target="_blank" rel="noopener">FULL MOON SOUND HEALING<br>25 OCT, SUN</a>
+      <div class="event sold-out" style="--y:1981.5; --h:190; --pt:9"><span class="sold-text">SHAAM-E-GHAZAL X BOLLYWOOD WITH<br>SAKHI LIVE<br>17 OCT, SAT</span><span class="stamp">SOLD OUT</span></div>
+      <a class="event" style="--y:2253.5; --h:153; --pt:18" href="https://forms.gle/6TJvoAQsqwCftL5f6" target="_blank" rel="noopener">PAINT A POT<br>24 OCT, SAT</a>
+      <a class="event" style="--y:2488.5; --h:244; --pt:10" href="https://forms.gle/XbjPa12qgNfPv68q7" target="_blank" rel="noopener">AROUND THE TABLE<br>WITH<br>CLAY, COFFEE &amp; CONVERSATION<br>25 OCT, SUN</a>
+      <a class="event" style="--y:2814.5; --h:154; --pt:18" href="https://forms.gle/Am2jkvrL5e8firyeA" target="_blank" rel="noopener">FULL MOON SOUND HEALING<br>25 OCT, SUN</a>
     </nav>
 
     <!-- Footer -->
