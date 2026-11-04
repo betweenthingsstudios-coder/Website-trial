@@ -1,4 +1,4 @@
-# Between Things — October
+# Between Things — Events
 
 Static, mobile-responsive events page for Between Things. Each event box links to its Google Form.
 
